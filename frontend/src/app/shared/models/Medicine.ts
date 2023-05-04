@@ -6,4 +6,5 @@ export class Medicine{
   rating?: number;
   price!: number;
   imageUrl!: string;
+  tags?: string[];
 }

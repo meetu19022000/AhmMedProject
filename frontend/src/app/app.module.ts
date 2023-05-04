@@ -9,6 +9,7 @@ import { RatingModule } from 'ng-starrating';
 import { SearchComponent } from './components/partials/search/search.component';
 import { UploadComponent } from './components/partials/upload/upload.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TagsComponent } from './components/partials/tags/tags.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     HomeComponent,
     SearchComponent,
-    UploadComponent
+    UploadComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,

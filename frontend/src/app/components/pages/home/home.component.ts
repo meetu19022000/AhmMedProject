@@ -16,6 +16,8 @@ export class HomeComponent {
       activatedRoute.params.subscribe((params) =>{
         if(params.searchTerm)
           this.medicines = this.medicineService.getAllMedicineBySearchTerms(params.searchTerm);
+        else if(params.tag)
+          this.medicines = this.medicineService.getAllMedicineByTags(params.tag);
         else
           this.medicines = medicineService.getAll();
       })
