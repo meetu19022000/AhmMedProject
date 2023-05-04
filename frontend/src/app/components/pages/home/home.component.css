@@ -4,7 +4,7 @@ ul{
   align-items: center;
   flex-wrap: wrap;
   list-style-type: none;
-  padding: 0;
+  padding: 0.9rem;
 }
 
 li a{
@@ -17,6 +17,8 @@ li a{
   flex-direction: column;
   overflow: hidden;
   color: #e72929;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 li a:hover{

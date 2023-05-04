@@ -12,4 +12,8 @@ export class MedicineService {
   getAll():Medicine[]{
     return sample_medicines;
   }
+
+  getAllMedicineBySearchTerms(searchTerm:string){
+    return this.getAll().filter(medicine => medicine.name.toLowerCase().includes(searchTerm.toLowerCase()));
+  }
 }

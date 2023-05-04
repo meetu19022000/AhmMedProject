@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { MedicineService } from 'src/app/services/medicine.service';
 import { Medicine } from 'src/app/shared/models/Medicine';
 
@@ -10,8 +11,14 @@ import { Medicine } from 'src/app/shared/models/Medicine';
 export class HomeComponent {
 
   medicines:Medicine[] = [];
-  constructor(private medicineService:MedicineService){
-    this.medicines = medicineService.getAll();
+  constructor(private medicineService:MedicineService,
+    activatedRoute:ActivatedRoute){
+      activatedRoute.params.subscribe((params) =>{
+        if(params.searchTerm)
+          this.medicines = this.medicineService.getAllMedicineBySearchTerms(params.searchTerm);
+        else
+          this.medicines = medicineService.getAll();
+      })
   }
 
   ngOnInit(): void{
