@@ -10,6 +10,7 @@ import { SearchComponent } from './components/partials/search/search.component';
 import { UploadComponent } from './components/partials/upload/upload.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TagsComponent } from './components/partials/tags/tags.component';
+import { MedicinePageComponent } from './components/pages/medicine-page/medicine-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TagsComponent } from './components/partials/tags/tags.component';
     HomeComponent,
     SearchComponent,
     UploadComponent,
-    TagsComponent
+    TagsComponent,
+    MedicinePageComponent
   ],
   imports: [
     BrowserModule,

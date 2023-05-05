@@ -44,4 +44,11 @@
         2. Add ts
         3. Add html
         4. Add CSS
+6. Medicine Page
+    1. Add method to medicine service
+    2. Generate medicine page component
+        1. Add Route
+        2. Add ts
+        3. Add html
+        4. Add CSS
 
