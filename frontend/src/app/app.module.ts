@@ -11,6 +11,8 @@ import { UploadComponent } from './components/partials/upload/upload.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TagsComponent } from './components/partials/tags/tags.component';
 import { MedicinePageComponent } from './components/pages/medicine-page/medicine-page.component';
+import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
+import { TitleComponent } from './components/partials/title/title.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MedicinePageComponent } from './components/pages/medicine-page/medicine
     SearchComponent,
     UploadComponent,
     TagsComponent,
-    MedicinePageComponent
+    MedicinePageComponent,
+    CartPageComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,

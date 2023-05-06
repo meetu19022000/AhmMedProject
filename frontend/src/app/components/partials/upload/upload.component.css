@@ -2,10 +2,12 @@ div{
   display: flex;
   justify-content: center;
   margin-top: 0.5rem;
+  margin-left: 6rem;
 }
 
 
 div a:hover{
   opacity: 1;
   cursor: pointer;
+  color: green;
 }

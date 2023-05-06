@@ -9,7 +9,7 @@ export const sample_medicines : Medicine[] = [
     stars:3.5,
     rating: 120,
     price:1000000,
-    imageUrl:'assets/medicine-1.jpg',
+    imageUrl:'assets/vicks.jpeg',
     tags:['HealthCare','Bio','FirstAid']
   },
   {
@@ -19,7 +19,7 @@ export const sample_medicines : Medicine[] = [
     stars:3,
     rating: 140,
     price:100000,
-    imageUrl:'assets/medicine-2.jpg',
+    imageUrl:'assets/vicks.jpeg',
     tags:['Bio','FirstAid']
   },
   {
@@ -29,7 +29,7 @@ export const sample_medicines : Medicine[] = [
     stars:3,
     rating: 140,
     price:1.32,
-    imageUrl:'assets/medicine-2.jpg',
+    imageUrl:'assets/vicks.jpeg',
     tags:['HealthCare','FirstAid']
   },
   {
@@ -39,7 +39,7 @@ export const sample_medicines : Medicine[] = [
     stars:3,
     rating: 140,
     price:2300,
-    imageUrl:'assets/medicine-2.jpg',
+    imageUrl:'assets/vicks.jpeg',
     tags:['HealthCare','Bio']
   },
   {
@@ -49,7 +49,7 @@ export const sample_medicines : Medicine[] = [
     stars:3,
     rating: 140,
     price:250000,
-    imageUrl:'assets/medicine-2.jpg',
+    imageUrl:'assets/vicks.jpeg',
     tags:['HealthCare']
   },
   {
@@ -59,7 +59,7 @@ export const sample_medicines : Medicine[] = [
     stars:3,
     rating: 140,
     price:100000,
-    imageUrl:'assets/medicine-2.jpg',
+    imageUrl:'assets/vicks.jpeg',
     tags:['Bio']
   }
 ]
