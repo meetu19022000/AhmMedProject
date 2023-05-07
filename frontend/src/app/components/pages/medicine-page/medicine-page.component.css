@@ -108,4 +108,36 @@ button:hover{
 .checkout{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 20rem;
+  border: 1px solid #ffbbbb;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.checkout>div{
+  font-size: 1.4rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.checkout a{
+  padding: 1rem;
+  color: white;
+  background: #e27929;
+  display: block;
+  width: 99%;
+  border-radius: 1rem;
+  text-align: center;
+  opacity: 0.7;
+  justify-self: center;
+}
+
+.checkout a:hover{
+  opacity: 1;
+  cursor: pointer;
 }

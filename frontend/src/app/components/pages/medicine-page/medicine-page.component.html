@@ -36,11 +36,13 @@
     </div>
     <div class="price">
       <span>
-        {{medicine.price | currency}}
+        {{medicine.price | currency:"INR"}}
       </span>
     </div>
 
     <button (click)="addToCart()">Add to Cart</button>
   </div>
-  <div class="checkout">CheckOut</div>
+  <div class="checkout">
+    <a routerLink="/checkout">Procees to Checkout</a>
+  </div>
 </div>

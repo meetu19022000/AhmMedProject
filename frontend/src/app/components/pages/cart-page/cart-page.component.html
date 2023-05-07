@@ -1,5 +1,9 @@
-<app-title title="Cart Page" margin="1.5rem 0 0 2.5rem"></app-title>
-
+<!--<app-title title="Cart Page" margin="1.5rem 0 0 2.5rem"></app-title>-->
+<div class="home">
+  <a routerLink="/"><fa-icon [icon]="icon"></fa-icon>Home</a>
+  <div class="aero"><fa-icon [icon]="icon1"></fa-icon></div>
+  <div class="data">Cart</div>
+</div>
 <div class="container">
   <ul>
     <li *ngFor="let carItem of cart.items">
@@ -26,20 +30,20 @@
         </select>
       </div>
       <div>
-        {{carItem.price | currency}}
+        {{carItem.price | currency:"INR"}}
       </div>
 
       <div>
         <button class="remove-button" (click)="removeFromCart(carItem)">
-          Remove
+          <fa-icon [icon]="icon2"></fa-icon>
         </button>
       </div>
     </li>
   </ul>
-  <div class="checkout">
+  <div *ngIf="cart.totalCount != 0" class="checkout">
     <div>
       <div class="medicine-count">{{cart.totalCount}}</div>
-      <div class="medicine-price">{{cart.totalPrice | currency}}</div>
+      <div class="medicine-price">{{cart.totalPrice | currency:"INR"}}</div>
     </div>
 
     <a routerLink="/checkout">Procees to Checkout</a>

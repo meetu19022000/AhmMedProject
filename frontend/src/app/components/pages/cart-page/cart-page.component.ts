@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faAngleRight, faHome, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { CartService } from 'src/app/services/cart.service';
 import { CartItem } from 'src/app/shared/models/CartItem';
 import { Cart } from 'src/app/shared/models/Carts';
@@ -10,6 +11,7 @@ import { Cart } from 'src/app/shared/models/Carts';
 })
 export class CartPageComponent {
   cart!: Cart;
+  icon = faHome; icon1 = faAngleRight; icon2 = faTrash;
   constructor(private cartService:CartService){
     this.cartService.getCartObservable().subscribe((cart) =>{
       this.cart = cart;
