@@ -70,4 +70,18 @@
         1. Home page
         2. Product page
         3. Cart Page
-
+9. Connect to BackEnd
+    1. Create backend folder
+    2. npm init
+    3. npm install typescirpt
+    4. create tsconfig.json
+    5. create .gitignore
+    6. copy data.ts to backend/src
+    7. npm install express cors
+    8. Create server.ts
+        1. intall @types
+        2. add apis
+    9. npm install nodemon ts-node --save-dev
+    10. add urs.ts to frontend
+    11. add httpclient module
+    12. update product service
