@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { faHome , faArrowLeft , faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import { CartService } from 'src/app/services/cart.service';
 import { MedicineService } from 'src/app/services/medicine.service';
+import { Cart } from 'src/app/shared/models/Carts';
 import { Medicine } from 'src/app/shared/models/Medicine';
 @Component({
   selector: 'app-medicine-page',
@@ -13,7 +14,7 @@ export class MedicinePageComponent {
   icon = faHome;
   icon1 = faAngleRight;
   medicine!: Medicine;
-
+  cart!: Cart;
   constructor(activatedRoute:ActivatedRoute,
     medicineService:MedicineService,
     private cartService:CartService,
@@ -22,6 +23,10 @@ export class MedicinePageComponent {
         if(params.id)
           this.medicine = medicineService.getMedicineById(params.id);
       })
+      this.cartService.getCartObservable().subscribe((cart) =>{
+        this.cart = cart;
+        console.log(JSON.stringify(cart));
+      }) ;
     }
 
   ngOnInit(){

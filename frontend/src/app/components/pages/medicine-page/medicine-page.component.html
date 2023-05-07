@@ -44,5 +44,6 @@
   </div>
   <div class="checkout">
     <a routerLink="/checkout">Procees to Checkout</a>
+    <button [disabled]="cart.totalCount === 0" routerLink="/checkout">Checkout</button>
   </div>
 </div>

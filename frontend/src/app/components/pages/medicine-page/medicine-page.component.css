@@ -114,6 +114,7 @@ button:hover{
   border: 1px solid #ffbbbb;
   border-radius: 1rem;
   padding: 2rem;
+  margin-left: 3rem;
 }
 
 .checkout>div{
@@ -140,4 +141,9 @@ button:hover{
 .checkout a:hover{
   opacity: 1;
   cursor: pointer;
+}
+
+button:disabled{
+  color: white;
+  background-color: grey;
 }
