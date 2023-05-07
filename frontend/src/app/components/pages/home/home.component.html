@@ -1,6 +1,10 @@
 <app-upload></app-upload>
 <app-search></app-search>
 <app-tags></app-tags>
+<app-not-found
+  [visible]="!medicines || !medicines.length"
+  resetLinkText="Reset Search">
+</app-not-found>
 <ul>
   <li *ngFor="let medicine of medicines">
     <a routerLink="/medicine/{{medicine.id}}">

@@ -1,12 +1,17 @@
 <app-upload></app-upload>
 <app-search></app-search>
 <app-tags></app-tags>
-<div class="home">
+<div *ngIf="medicine.id" class="home">
   <a routerLink="/"><fa-icon [icon]="icon"></fa-icon>Home</a>
   <div class="aero"><fa-icon [icon]="icon1"></fa-icon></div>
   <div class="data">{{medicine.name}}</div>
 </div>
-<div class="container">
+<app-not-found
+  [visible]="!medicine.id"
+  notFoundMessage="Product Not Found"
+  resetLinkText="Back To Home">
+</app-not-found>
+<div *ngIf="medicine.id" class="container">
   <div class="image">
     <img [src]="medicine.imageUrl" [alt]="medicine.name"/>
   </div>

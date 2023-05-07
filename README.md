@@ -61,4 +61,13 @@
         2. Add ts
         3. Add html
         4. Add CSS
+8. Not Found!
+    1. Generate Component
+        1. Add ts
+        2. Add html
+        3. Add css
+    2. Add to pages
+        1. Home page
+        2. Medicine page
+        3. Cart Page
 
