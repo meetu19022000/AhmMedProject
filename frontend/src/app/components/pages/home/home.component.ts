@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MedicineService } from 'src/app/services/medicine.service';
-import { Medicine } from 'src/app/shared/models/Medicine';
+import { ProductService } from 'src/app/services/product.service';
+import { Product } from 'src/app/shared/models/Product';
 
 @Component({
   selector: 'app-home',
@@ -10,16 +10,16 @@ import { Medicine } from 'src/app/shared/models/Medicine';
 })
 export class HomeComponent {
 
-  medicines:Medicine[] = [];
-  constructor(private medicineService:MedicineService,
+  products:Product[] = [];
+  constructor(private productService:ProductService,
     activatedRoute:ActivatedRoute){
       activatedRoute.params.subscribe((params) =>{
         if(params.searchTerm)
-          this.medicines = this.medicineService.getAllMedicineBySearchTerms(params.searchTerm);
+          this.products = this.productService.getAllProductBySearchTerms(params.searchTerm);
         else if(params.tag)
-          this.medicines = this.medicineService.getAllMedicineByTags(params.tag);
+          this.products = this.productService.getAllProductByTags(params.tag);
         else
-          this.medicines = medicineService.getAll();
+          this.products = productService.getAll();
       })
   }
 

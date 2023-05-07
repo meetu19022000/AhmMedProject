@@ -13,12 +13,12 @@
   <ul>
     <li *ngFor="let carItem of cart.items">
       <div>
-        <img [src]="carItem.medicine.imageUrl"
-              [alt]="carItem.medicine.name">
+        <img [src]="carItem.product.imageUrl"
+              [alt]="carItem.product.name">
       </div>
       <div>
-        <a routerLink="/medicine/{{carItem.medicine.id}}">
-          {{carItem.medicine.name}}
+        <a routerLink="/product/{{carItem.product.id}}">
+          {{carItem.product.name}}
         </a>
       </div>
       <div>
@@ -47,8 +47,8 @@
   </ul>
   <div class="checkout">
     <div>
-      <div class="medicine-count">{{cart.totalCount}}</div>
-      <div class="medicine-price">{{cart.totalPrice | currency:"INR"}}</div>
+      <div class="product-count">{{cart.totalCount}}</div>
+      <div class="product-price">{{cart.totalPrice | currency:"INR"}}</div>
     </div>
 
     <a routerLink="/checkout">Procees to Checkout</a>

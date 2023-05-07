@@ -1,29 +1,29 @@
 <app-upload></app-upload>
 <app-search></app-search>
 <app-tags></app-tags>
-<div *ngIf="medicine.id" class="home">
+<div *ngIf="product.id" class="home">
   <a routerLink="/"><fa-icon [icon]="icon"></fa-icon>Home</a>
   <div class="aero"><fa-icon [icon]="icon1"></fa-icon></div>
-  <div class="data">{{medicine.name}}</div>
+  <div class="data">{{product.name}}</div>
 </div>
 <app-not-found
-  [visible]="!medicine.id"
+  [visible]="!product.id"
   notFoundMessage="Product Not Found"
   resetLinkText="Back To Home">
 </app-not-found>
-<div *ngIf="medicine.id" class="container">
+<div *ngIf="product.id" class="container">
   <div class="image">
-    <img [src]="medicine.imageUrl" [alt]="medicine.name"/>
+    <img [src]="product.imageUrl" [alt]="product.name"/>
   </div>
   <div class="detail">
     <div class="header">
       <span class="name">
-        {{medicine.name}}
+        {{product.name}}
       </span>
     </div>
     <div class="rating">
       <star-rating
-      [value]="medicine.stars"
+      [value]="product.stars"
       [totalstars]="5"
       checkedcolor="red"
       uncheckedcolor="black"
@@ -32,16 +32,16 @@
       </star-rating>
     </div>
     <div class="shortDescription">
-      <span>{{medicine.shortDescription}}</span>
+      <span>{{product.shortDescription}}</span>
     </div>
     <div class="tags">
-      <a *ngFor="let tag of medicine.tags" routerLink="/tag/{{tag}}">
+      <a *ngFor="let tag of product.tags" routerLink="/tag/{{tag}}">
         {{tag}}
       </a>
     </div>
     <div class="price">
       <span>
-        {{medicine.price | currency:"INR"}}
+        {{product.price | currency:"INR"}}
       </span>
     </div>
 

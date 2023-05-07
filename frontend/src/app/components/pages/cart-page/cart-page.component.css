@@ -107,16 +107,16 @@ li .remove-button:hover{
   align-items: flex-start;
 }
 
-.medicine-count{
+.product-count{
   margin-bottom: 1.5rem;
 }
 
-.medicine-count::before{
+.product-count::before{
   content: "Count: ";
   color: grey;
 }
 
-.medicine-price::before{
+.product-price::before{
   content: "Price: ";
   color: grey;
 }

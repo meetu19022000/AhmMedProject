@@ -2,26 +2,26 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { faHome , faArrowLeft , faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import { CartService } from 'src/app/services/cart.service';
-import { MedicineService } from 'src/app/services/medicine.service';
+import { ProductService } from 'src/app/services/product.service';
 import { Cart } from 'src/app/shared/models/Carts';
-import { Medicine } from 'src/app/shared/models/Medicine';
+import { Product } from 'src/app/shared/models/Product';
 @Component({
-  selector: 'app-medicine-page',
-  templateUrl: './medicine-page.component.html',
-  styleUrls: ['./medicine-page.component.css']
+  selector: 'app-product-page',
+  templateUrl: './product-page.component.html',
+  styleUrls: ['./product-page.component.css']
 })
-export class MedicinePageComponent {
+export class ProductPageComponent {
   icon = faHome;
   icon1 = faAngleRight;
-  medicine!: Medicine;
+  product!: Product;
   cart!: Cart;
   constructor(activatedRoute:ActivatedRoute,
-    medicineService:MedicineService,
+    productService:ProductService,
     private cartService:CartService,
     private router:Router){
       activatedRoute.params.subscribe((params) =>{
         if(params.id)
-          this.medicine = medicineService.getMedicineById(params.id);
+          this.product = productService.getProductById(params.id);
       })
       this.cartService.getCartObservable().subscribe((cart) =>{
         this.cart = cart;
@@ -34,7 +34,7 @@ export class MedicinePageComponent {
   }
 
   addToCart(){
-    this.cartService.addToCart(this.medicine);
+    this.cartService.addToCart(this.product);
     this.router.navigateByUrl('/cart-page');
   }
 }

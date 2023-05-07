@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MedicineService } from 'src/app/services/medicine.service';
+import { ProductService } from 'src/app/services/product.service';
 import { Tag } from 'src/app/shared/models/Tag';
 
 @Component({
@@ -9,8 +9,8 @@ import { Tag } from 'src/app/shared/models/Tag';
 })
 export class TagsComponent {
   tags?:Tag[];
-  constructor(medicineService:MedicineService){
-    this.tags = medicineService.getAllTags();
+  constructor(productService:ProductService){
+    this.tags = productService.getAllTags();
   }
 
   ngOnInit(): void{}

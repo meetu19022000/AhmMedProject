@@ -1,7 +1,7 @@
-import { Medicine } from "./app/shared/models/Medicine";
+import { Product } from "./app/shared/models/Product";
 import { Tag } from "./app/shared/models/Tag";
 
-export const sample_medicines : Medicine[] = [
+export const sample_products : Product[] = [
   {
     id:'1',
     name: 'Meet',

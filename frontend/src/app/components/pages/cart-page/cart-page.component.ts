@@ -23,11 +23,11 @@ export class CartPageComponent {
   }
 
   removeFromCart(cartItem:CartItem){
-    this.cartService.removeFromCart(cartItem.medicine.id);
+    this.cartService.removeFromCart(cartItem.product.id);
   }
 
   changeQuantity(cartItem:CartItem,quantityInString:string){
     const quantity = parseInt(quantityInString);
-    this.cartService.changeQuantity(cartItem.medicine.id,quantity);
+    this.cartService.changeQuantity(cartItem.product.id,quantity);
   }
 }

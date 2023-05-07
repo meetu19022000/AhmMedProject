@@ -2,20 +2,20 @@
 <app-search></app-search>
 <app-tags></app-tags>
 <app-not-found
-  [visible]="!medicines || !medicines.length"
+  [visible]="!products || !products.length"
   resetLinkText="Reset Search">
 </app-not-found>
 <ul>
-  <li *ngFor="let medicine of medicines">
-    <a routerLink="/medicine/{{medicine.id}}">
-      <img [src]="medicine.imageUrl" alt="{{medicine.name}}"/>
+  <li *ngFor="let product of products">
+    <a routerLink="/product/{{product.id}}">
+      <img [src]="product.imageUrl" alt="{{product.name}}"/>
       <div class="content">
         <div class="name">
-          {{medicine.name}}
+          {{product.name}}
         </div>
         <div class="stars">
           <star-rating
-          [value]="medicine.stars"
+          [value]="product.stars"
           [totalstars]="5"
           checkedcolor="red"
           uncheckedcolor="black"
@@ -24,11 +24,11 @@
         </star-rating>
         </div>
         <div class="short-description">
-          {{medicine.shortDescription}}
+          {{product.shortDescription}}
         </div>
         <div class="price">
           <span>
-            {{medicine.price | currency:"INR"}}
+            {{product.price | currency:"INR"}}
           </span>
         </div>
       </div>

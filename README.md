@@ -7,18 +7,18 @@
     1. Generate Componenet
     2. Add html
     3. Add CSS
-3. List Medicine
-    1. Create Medicine model
+3. List Product
+    1. Create Product model
     2. Create data.ts
-        1. Add sample medicine
+        1. Add sample product
     3. Add image to assets
-    4. Create Medicine service
+    4. Create Product service
     5. Create Home Component
         1. Add ts
         2. Add html
         3. Add css
 4. Search
-    1. Add method to medicine service
+    1. Add method to product service
     2. Add search route
     3. Show search result in Home component
     4. Generate search component
@@ -34,9 +34,9 @@
 5. Tags Bar
     1. Create Tag model
     2. Add sample tag to data.ts
-    3. Medicine service
+    3. Product service
         1. Add get all tags method
-        2. Add get all medicine by tag method
+        2. Add get all product by tag method
     4. Add tags route
     5. Show tag result in Home component
     6. Generate Tags component
@@ -44,9 +44,9 @@
         2. Add ts
         3. Add html
         4. Add CSS
-6. Medicine Page
-    1. Add method to medicine service
-    2. Generate medicine page component
+6. Product Page
+    1. Add method to product service
+    2. Generate product page component
         1. Add Route
         2. Add ts
         3. Add html
@@ -55,7 +55,7 @@
     1. Create CartItem Model
     2. Create Cart Model
     3. Generate Cart service
-    4. Add to Cart Button in Medicine Page
+    4. Add to Cart Button in Product Page
     5. Generate Cart PAge component
         1. Add Route
         2. Add ts
@@ -68,6 +68,6 @@
         3. Add css
     2. Add to pages
         1. Home page
-        2. Medicine page
+        2. Product page
         3. Cart Page
 
