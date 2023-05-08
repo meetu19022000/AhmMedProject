@@ -9,7 +9,7 @@ import { Cart } from 'src/app/shared/models/Carts';
   templateUrl: './cart-page.component.html',
   styleUrls: ['./cart-page.component.css']
 })
-export class CartPageComponent {
+export class CartPageComponent implements OnInit{
   cart!: Cart;
   icon = faHome; icon1 = faAngleRight; icon2 = faTrash;
   constructor(private cartService:CartService){

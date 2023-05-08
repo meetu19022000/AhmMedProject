@@ -5,7 +5,7 @@ import { faUpload } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './upload.component.html',
   styleUrls: ['./upload.component.css']
 })
-export class UploadComponent  {
+export class UploadComponent implements OnInit{
   icon = faUpload;
 
   ngOnInit():void {}

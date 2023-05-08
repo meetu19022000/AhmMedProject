@@ -9,7 +9,7 @@ import { Product } from 'src/app/shared/models/Product';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent  {
+export class HomeComponent implements OnInit{
 
   products:Product[] = [];
   constructor(private productService:ProductService,
