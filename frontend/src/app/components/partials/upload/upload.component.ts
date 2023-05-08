@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-upload',
   templateUrl: './upload.component.html',
   styleUrls: ['./upload.component.css']
 })
-export class UploadComponent {
+export class UploadComponent implements OnInit {
   icon = faUpload;
+
+  ngOnInit():void {}
 }

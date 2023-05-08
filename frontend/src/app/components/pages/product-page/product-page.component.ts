@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { faHome , faArrowLeft , faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import { CartService } from 'src/app/services/cart.service';
@@ -10,7 +10,7 @@ import { Product } from 'src/app/shared/models/Product';
   templateUrl: './product-page.component.html',
   styleUrls: ['./product-page.component.css']
 })
-export class ProductPageComponent {
+export class ProductPageComponent implements OnInit {
   icon = faHome;
   icon1 = faAngleRight;
   product!: Product;

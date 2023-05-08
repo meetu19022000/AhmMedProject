@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-title',
   templateUrl: './title.component.html',
   styleUrls: ['./title.component.css']
 })
-export class TitleComponent {
+export class TitleComponent implements OnInit {
   @Input()
   title!: string;
 
@@ -14,4 +14,8 @@ export class TitleComponent {
 
   @Input()
   fontSize? = '1.7rem';
+
+  ngOnInit(): void {
+
+  }
 }

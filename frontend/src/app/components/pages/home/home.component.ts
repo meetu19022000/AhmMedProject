@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ProductService } from 'src/app/services/product.service';
@@ -9,7 +9,7 @@ import { Product } from 'src/app/shared/models/Product';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   products:Product[] = [];
   constructor(private productService:ProductService,
