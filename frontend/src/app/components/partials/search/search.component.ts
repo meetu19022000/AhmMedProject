@@ -6,7 +6,7 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent  {
   searchTerm = '';
   constructor(activatedRoute:ActivatedRoute,private router:Router){
     activatedRoute.params.subscribe((params) => {

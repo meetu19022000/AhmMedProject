@@ -7,7 +7,7 @@ import { Tag } from 'src/app/shared/models/Tag';
   templateUrl: './tags.component.html',
   styleUrls: ['./tags.component.css']
 })
-export class TagsComponent implements OnInit {
+export class TagsComponent  {
   tags?:Tag[];
   constructor(productService:ProductService){
     productService.getAllTags().subscribe(serverTags => {

@@ -10,7 +10,7 @@ import { Product } from 'src/app/shared/models/Product';
   templateUrl: './product-page.component.html',
   styleUrls: ['./product-page.component.css']
 })
-export class ProductPageComponent implements OnInit {
+export class ProductPageComponent  {
   icon = faHome;
   icon1 = faAngleRight;
   product!: Product;
