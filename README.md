@@ -85,3 +85,15 @@
     10. add urs.ts to frontend
     11. add httpclient module
     12. update product service
+10. Login page
+    1. Generate Component
+        1. Add to routes
+        2. Add ts
+        3. Add html
+            1. Import Reactive Forms Module
+        4. Add css
+    2. Add login Api
+        1. Use json
+        2. Add jsonwebtocken
+        3. Test using postman
+    3. ..
