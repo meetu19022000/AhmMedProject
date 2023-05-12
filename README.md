@@ -110,3 +110,14 @@
         4. Add local storage methods
         5. Add logout method
             1. Add to header
+11. Connect login api to MongoDB Atlas
+    1. Moving apis to routers
+    2. Create MongoDB Atlas
+    3. Create .env file
+    4. Install
+        1. mongoose
+        2. dotenv
+        3. bcryptjs
+        4. express-async-handler
+    5. Connect to MongoDB Atlas
+    6. User MongoDB instead of data.ts in apis
