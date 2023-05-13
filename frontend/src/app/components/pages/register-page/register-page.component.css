@@ -3,60 +3,32 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 30rem;
-  border: 1px solid #e29;
-  border-radius: 2rem;
-  padding-bottom: 2rem;
-  margin: auto;
-  margin-top: 2rem;
-  box-shadow: 20px 20px 20px rgb(18, 0, 0);
+  margin-top: 1rem;
 }
 
-form{
+.screen {
+	background: linear-gradient(90deg, #5D54A4, #7C78B8);
+	position: relative;
+	height: 34rem;
+	width: 30rem;
+	box-shadow: 0px 0px 24px #5C5696;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.details{
+  width: 80%;
+}
+
+.login{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.input-container{
-  display: flex;
-  flex-direction: column;
-}
-
-input{
-  width: 15rem;
-  border-radius: 0.4rem;
-  border: 2px solid rgb(29, 2, 50);
-  height: 2rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-style:normal;
-  font-size: 1rem;
-  font-family:'Times New Roman', Times, serif;
-  padding-left: 0.5rem;
-}
-
-.error-list{
-  color: red;
-  font-size: 0.9rem;
-  padding-bottom: 0.5rem;
-}
-
-button{
-  width: 5rem;
-  border: 1px solid;
-  border-radius: 0.5rem;
-  padding-bottom: 0.2rem;
-}
-
-button:hover{
-  cursor: pointer;
-  opacity: 0.95;
-  color: brown;
-}
-
 */
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
@@ -82,8 +54,8 @@ body {
 .screen {
 	background: linear-gradient(90deg, #5D54A4, #7C78B8);
 	position: relative;
-	height: 30rem;
-	width: 360px;
+	height: 34rem;
+	width: 380px;
 	box-shadow: 0px 0px 24px #5C5696;
 }
 
@@ -132,11 +104,11 @@ body {
 .login {
 	width: 320px;
 	padding: 30px;
-	padding-top: 115px;
+	padding-top: 40px;
 }
 
 .login__field {
-	padding: 20px 0px;
+	padding: 10px 0px;
 	position: relative;
 }
 
@@ -166,8 +138,8 @@ body {
 
 .login__submit,.login__clear {
 	background: #fff;
-	font-size: 14px;
-	margin-top: 25px;
+	font-size: 12px;
+	margin-top: 10px;
 	padding: 10px 20px;
 	border-radius: 26px;
 	border: 1px solid #D4D3E8;
@@ -205,7 +177,7 @@ body {
 }
 
 .register{
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,0 +1,112 @@
+<!--<div class="container">
+  <div class="screen">
+    <div class="details">
+      <form [formGroup]="registerForm" (ngSubmit)="submit()">
+        <text-input
+          [control]="fc.name"
+          [showErrorsWhen]="isSubmitted"
+          label="Name">
+        </text-input>
+        <text-input
+          [control]="fc.email"
+          [showErrorsWhen]="isSubmitted"
+          label="Email"
+          type="email">
+        </text-input>
+        <text-input
+          [control]="fc.password"
+          [showErrorsWhen]="isSubmitted"
+          label="Password"
+          type="password">
+        </text-input>
+        <text-input
+          [control]="fc.confirmPassword"
+          [showErrorsWhen]="isSubmitted"
+          label="Confirm Password"
+          type="password">
+        </text-input>
+        <text-input
+          [control]="fc.address"
+          [showErrorsWhen]="isSubmitted"
+          label="Address">
+        </text-input>
+
+        <default-button text="Register"></default-button>
+
+        <div class="login">
+          Already a user? &nbsp;
+          <a routerLink="/login" [queryParams]="{returnUrl: returnUrl}">
+            Login Here
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>-->
+
+<!-- ********************************************* -->
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login" [formGroup]="registerForm" (ngSubmit)="submit()">
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" placeholder="Name" formControlName="name"/>
+          <div class="error-list" *ngIf="fc.name.errors && isSubmitted">
+            <div *ngIf="fc.name.errors.required">Should not be empty</div>
+          </div>
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="email" class="login__input" placeholder="Email" formControlName="email"/>
+          <div class="error-list" *ngIf="fc.email.errors && isSubmitted">
+            <div *ngIf="fc.email.errors.required">Should not be empty</div>
+            <div *ngIf="fc.email.errors.email">Email is not correct</div>
+          </div>
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input" placeholder="Password" formControlName="password"/>
+          <div class="error-list" *ngIf="fc.password.errors && isSubmitted">
+            <div *ngIf="fc.password.errors.required">Should not be empty</div>
+            <div *ngIf="fc.password.errors.minLength">Length is too short</div>
+          </div>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input" placeholder="Confirm Password" formControlName="confirmPassword"/>
+          <div class="error-list" *ngIf="fc.confirmPassword.errors && isSubmitted">
+            <div *ngIf="fc.confirmPassword.errors.required">Should not be empty</div>
+            <div *ngIf="fc.confirmPassword.errors.minLength">Length is too short</div>
+            <div *ngIf="fc.confirmPassword.errors.notMatch">Password and Confirm Password does not match</div>
+          </div>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" placeholder="Address" formControlName="address"/>
+          <div class="error-list" *ngIf="fc.address.errors && isSubmitted">
+            <div *ngIf="fc.address.errors.required">Should not be empty</div>
+          </div>
+				</div>
+				<button class="button login__submit" type="submit">
+					<span class="button__text">Register</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+        <button class="button login__clear" type="reset">
+					<span class="button__text">Clear</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+        <div class="register">
+          Already a user? &nbsp;
+          <a routerLink="/login" [queryParams]="{returnUrl: returnUrl}">
+            Login Here
+          </a>
+        </div>
+			</form>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape3"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>
+	</div>
+</div>
