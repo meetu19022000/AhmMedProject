@@ -126,3 +126,8 @@
     2. Add register service method
     3. Add register link
     4. Add resgiter component
+13. Loading
+    1. Add image
+    2. Add component
+    3. Add service
+    4. Add interseptor
