@@ -49,14 +49,16 @@
             <div *ngIf="fc.password.errors.required">Should not be empty</div>
           </div>
 				</div>
-				<button class="button login__submit" type="submit">
-					<span class="button__text">Log In</span>
-					<i class="button__icon fas fa-chevron-right"></i>
-				</button>
-        <button class="button login__clear" type="reset">
-					<span class="button__text">Clear</span>
-					<i class="button__icon fas fa-chevron-right"></i>
-				</button>
+        <div class="buttons">
+          <button class="button login__submit" type="submit">
+            <span class="button__text">Log In</span>
+            <i class="button__icon fas fa-chevron-right"></i>
+          </button>
+          <button class="button login__clear" type="reset">
+            <span class="button__text">Clear</span>
+            <i class="button__icon fas fa-chevron-right"></i>
+          </button>
+        </div>
         <div class="register">
           New User? &nbsp;
           <a routerLink="/register" [queryParams]="{returnUrl:returnUrl}">

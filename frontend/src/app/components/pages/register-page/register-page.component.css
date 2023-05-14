@@ -54,8 +54,8 @@ body {
 .screen {
 	background: linear-gradient(90deg, #5D54A4, #7C78B8);
 	position: relative;
-	height: 34rem;
-	width: 380px;
+	height: 32rem;
+	width: 370px;
 	box-shadow: 0px 0px 24px #5C5696;
 }
 
@@ -85,7 +85,7 @@ body {
 	height: 405px;
 	width: 520px;
 	background: #FFF;
-	top: -30px;
+	top: 15px;
 	right: 120px;
 	border-radius: 0 70px 0 0;
 }
@@ -136,10 +136,15 @@ body {
 	border-bottom-color: #6A679E;
 }
 
+.buttons{
+  display: flex;
+}
+
 .login__submit,.login__clear {
 	background: #fff;
 	font-size: 12px;
 	margin-top: 10px;
+  margin-right: 10px;
 	padding: 10px 20px;
 	border-radius: 26px;
 	border: 1px solid #D4D3E8;
@@ -147,7 +152,7 @@ body {
 	font-weight: 700;
 	display: flex;
 	align-items: center;
-	width: 100%;
+	width: 50%;
 	color: #4C489D;
 	box-shadow: 0px 2px 2px #5C5696;
 	cursor: pointer;
@@ -177,7 +182,7 @@ body {
 }
 
 .register{
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,5 +195,5 @@ body {
 
 .register a:hover{
   cursor: pointer;
-  color: rgb(142, 33, 33);
+  color: rgb(227, 182, 182);
 }

@@ -1,5 +1,7 @@
 <div>
   <div class="prescription">
-    Order with Prescription...<a routerLink="/upload">Upload Now<fa-icon [icon]="icon"></fa-icon></a>
+    <!--Order with Prescription...<a routerLink="/upload">Upload Now<fa-icon [icon]="icon"></fa-icon></a>-->
+    Order with Prescription...
+    <input type="file" class="file-upload" onchange="console.log(event.target.files)">
   </div>
 </div>

@@ -54,6 +54,7 @@
 					<input type="text" class="login__input" placeholder="Name" formControlName="name"/>
           <div class="error-list" *ngIf="fc.name.errors && isSubmitted">
             <div *ngIf="fc.name.errors.required">Should not be empty</div>
+            <div *ngIf="fc.name.errors.minlength">Length is too short</div>
           </div>
 				</div>
 				<div class="login__field">
@@ -69,7 +70,7 @@
 					<input type="password" class="login__input" placeholder="Password" formControlName="password"/>
           <div class="error-list" *ngIf="fc.password.errors && isSubmitted">
             <div *ngIf="fc.password.errors.required">Should not be empty</div>
-            <div *ngIf="fc.password.errors.minLength">Length is too short</div>
+            <div *ngIf="fc.password.errors.minlength">Length is too short</div>
           </div>
 				</div>
         <div class="login__field">
@@ -77,7 +78,7 @@
 					<input type="password" class="login__input" placeholder="Confirm Password" formControlName="confirmPassword"/>
           <div class="error-list" *ngIf="fc.confirmPassword.errors && isSubmitted">
             <div *ngIf="fc.confirmPassword.errors.required">Should not be empty</div>
-            <div *ngIf="fc.confirmPassword.errors.minLength">Length is too short</div>
+            <div *ngIf="fc.confirmPassword.errors.minlength">Length is too short</div>
             <div *ngIf="fc.confirmPassword.errors.notMatch">Password and Confirm Password does not match</div>
           </div>
 				</div>
@@ -86,16 +87,19 @@
 					<input type="text" class="login__input" placeholder="Address" formControlName="address"/>
           <div class="error-list" *ngIf="fc.address.errors && isSubmitted">
             <div *ngIf="fc.address.errors.required">Should not be empty</div>
+            <div *ngIf="fc.address.errors.minlength">Length is too short</div>
           </div>
 				</div>
-				<button class="button login__submit" type="submit">
-					<span class="button__text">Register</span>
-					<i class="button__icon fas fa-chevron-right"></i>
-				</button>
-        <button class="button login__clear" type="reset">
-					<span class="button__text">Clear</span>
-					<i class="button__icon fas fa-chevron-right"></i>
-				</button>
+        <div class="buttons">
+          <button class="button login__submit" type="submit">
+            <span class="button__text">Register</span>
+            <i class="button__icon fas fa-chevron-right"></i>
+          </button>
+          <button class="button login__clear" type="reset">
+            <span class="button__text">Clear</span>
+            <i class="button__icon fas fa-chevron-right"></i>
+          </button>
+        </div>
         <div class="register">
           Already a user? &nbsp;
           <a routerLink="/login" [queryParams]="{returnUrl: returnUrl}">
