@@ -137,3 +137,12 @@ li .remove-button:hover{
   opacity: 1;
   cursor: pointer;
 }
+
+input{
+  height: 1.5rem;
+  width: 4.5em;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
