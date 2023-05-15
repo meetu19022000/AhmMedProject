@@ -131,3 +131,10 @@
     2. Add component
     3. Add service
     4. Add interseptor
+14. Checkout page
+    1. Create order model
+    2. Create checkout page component
+        1. Add to router
+    3. Add user to user service
+    4. Add cart to cart service
+    5. Create order item list component

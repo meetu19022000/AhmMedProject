@@ -27,7 +27,7 @@ export class ProductPageComponent implements OnInit{
       })
       this.cartService.getCartObservable().subscribe((cart) =>{
         this.cart = cart;
-        console.log(JSON.stringify(cart));
+        //console.log(JSON.stringify(cart));
       }) ;
     }
 
