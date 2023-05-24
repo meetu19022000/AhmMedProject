@@ -10,5 +10,5 @@ export class Order{
   addressLatLng?: LatLng; //adding new filed to model
   paymentId!: string;
   createdAt!: string;
-  status!: StorageManager;
+  status!: string;
 }

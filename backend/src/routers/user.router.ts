@@ -61,9 +61,10 @@ router.post('/register', asyncHandler(
 
 const generateTokenResponse = (user:any) => {
     const token = jwt.sign({
+        id: user.id,
         email:user.email,
         isAdmin: user.isAdmin
-    },"SomeRandomText",{
+    },process.env.JWT_TOKEN!,{
         expiresIn:"30d"
     });
     user.token = token;
