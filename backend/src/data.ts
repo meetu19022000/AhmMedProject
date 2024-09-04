@@ -58,6 +58,106 @@ export const sample_products : any[] = [
     price:100000,
     imageUrl:'assets/vicks.jpeg',
     tags:['Bio']
+  },
+  {
+    id: '7',
+    name: "RANTAC-DOM",
+    shortDescription: "Ranitidine Hydrochloride & Domperidone Tablets",
+    tags: ['Tablets'],
+    stars: 1,
+    rating: 130,
+    price: 67.12,
+    imageUrl: 'assets/RANTAC-DOM.jpeg'
+  },
+  {
+    id: '8',
+    name: "Amoxyclav 625",
+    shortDescription: "Amoxycillin & Potassium Clavulanate",
+    tags: ['Tablets'],
+    stars: 2,
+    rating: 130,
+    price: 204.93,
+    imageUrl: 'assets/Amoxyclav 625.jpeg'
+  },
+  {
+    id: '9',
+    name: "DIOMINIC-DCA",
+    shortDescription: "Chlorpheniramine Maleate, Phenylephirine hydrochloride, caffeine anhydroud & Paracetamol",
+    tags: ['Tablets'],
+    stars: 3,
+    rating: 130,
+    price: 38,
+    imageUrl: 'assets/DIOMINIC-DCA.jpeg'
+  },
+  {
+    id: '10',
+    name: "Ibugesic Plus",
+    shortDescription: "Ibuprofen and Paracetamol",
+    tags: ['Tablets'],
+    stars: 4,
+    rating: 130,
+    price: 33.27,
+    imageUrl: 'assets/Ibugesic Plus.jpeg'
+  },
+  {
+    id: '11',
+    name: "CHYMOFINE FORTE",
+    shortDescription: "Trypsin-Shymotrypsin",
+    tags: ['Tablets'],
+    stars: 4.5,
+    rating: 130,
+    price: 475,
+    imageUrl: 'assets/CHYMOFINE FORTE.jpeg'
+  },
+  {
+    id: '12',
+    name: "AZIVISTA 500",
+    shortDescription: "Azithromycin",
+    tags: ['Tablets'],
+    stars: 3.9,
+    rating: 130,
+    price: 131.94,
+    imageUrl: 'assets/vicks.jpeg'
+  },
+  {
+    id: '13',
+    name: "DAN-MR",
+    shortDescription: "Diclofenac Sodium, Chlorzoxazone & Paracetamol",
+    tags: ['Tablets'],
+    stars: 1.1,
+    rating: 130,
+    price: 48.2,
+    imageUrl: 'assets/vicks.jpeg'
+  },
+  {
+    id: '14',
+    name: "OSON-O",
+    shortDescription: "Ofloxacin And Ornidazole",
+    tags: ['Tablets'],
+    stars: 5,
+    rating: 130,
+    price: 65.5,
+    imageUrl: 'assets/vicks.jpeg'
+  },
+  {
+    id: '15',
+    name: "Crocin Advance",
+    shortDescription: "Pracetamol",
+    tags: ['Tablets'],
+    stars: 5,
+    rating: 130,
+    price: 19.93,
+    imageUrl: 'assets/vicks.jpeg'
+  },
+  {
+    id: '16',
+    name: "Levoflox-500",
+    shortDescription: "Levodloxacin",
+    tags: ['Tablets'],
+    stars: 5,
+    rating: 130,
+    price: 100.68,
+    imageUrl: 'assets/vicks.jpeg'
   }
 ]
 
@@ -78,6 +178,10 @@ export const sample_tags:any[] = [
     name:'HealthCare',
     count:1
   },
+  {
+    name: 'Tablets',
+    count:4
+  }
 ]
 
 export const sample_users: any[] = [
