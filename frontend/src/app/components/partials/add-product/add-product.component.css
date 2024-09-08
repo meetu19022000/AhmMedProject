@@ -10,3 +10,38 @@
 	align-items: center;
 	justify-content: center;
 }
+
+.add-product-field{
+  border: 3px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.add-product-button{
+  border: 1px solid #e72929;
+  border-radius: 5px;
+  margin-right: 10%;
+}
+
+.error-list{
+  color: red;
+  font-size: 0.9rem;
+  font-family:'Times New Roman', Times, serif;
+}
+
+input{
+  width: 23rem;
+  height: 2.5rem;
+  padding: 12px 20px;
+  border-radius: 0.5rem;
+  font-size: medium;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+button{
+  width: 9rem;
+  height: 2.5rem;
+}

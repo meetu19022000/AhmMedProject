@@ -55,7 +55,7 @@ export class ProductService {
         },
         error: (errorResponse) => {
           this.toastrService.error(errorResponse.error,
-              'Register Failed')
+              'Product addition Failed')
         }
         
       })

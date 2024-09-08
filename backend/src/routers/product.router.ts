@@ -83,20 +83,21 @@ router.post('/add', asyncHandler(
         if(product){
             res.status(HTTP_BAD_REQUEST).send('Product already exist, please try again');
         }
+        else{
+            const newProduct:Product = {
+                id:'',
+                name,
+                shortDescription,
+                stars,
+                rating,
+                price,
+                imageUrl,
+                tags
+            }
 
-        const newProduct:Product = {
-            id:'',
-            name,
-            shortDescription,
-            stars,
-            rating,
-            price,
-            imageUrl,
-            tags
+            const dbProduct = await ProductModel.create(newProduct);
+            res.send(dbProduct);
         }
-
-        const dbProduct = await ProductModel.create(newProduct);
-        res.send('Product added successfully');
     }
 ))
 

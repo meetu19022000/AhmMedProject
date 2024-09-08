@@ -1,31 +1,54 @@
 <div class="add-product">
-  <form>
-    <div>
-      <input type="text" placeholder="Name"/>
+  <form [formGroup]="addProductForm" (ngSubmit)="submit()">
+    <div class="add-product-field">
+      <input type="text" placeholder="Name" formControlName="name"/>
+      <div class="error-list" *ngIf="fc.name.errors && isSubmitted">
+        <div *ngIf="fc.name.errors.required">Should not be empty</div>
+      </div>
+    </div>
+    <div class="add-product-field">
+      <input type="text" placeholder="Short description" formControlName="shortDescription"/>
+      <div class="error-list" *ngIf="fc.shortDescription.errors && isSubmitted">
+        <div *ngIf="fc.shortDescription.errors.required">Should not be empty</div>
+      </div>
+    </div>
+    <div class="add-product-field">
+      <input type="text" placeholder="Starts" formControlName="stars"/>
+      <div class="error-list" *ngIf="fc.stars.errors && isSubmitted">
+        <div *ngIf="fc.stars.errors.required">Should not be empty</div>
+        <div *ngIf="fc.stars.errors.min">starts should be grater than 0</div>
+        <div *ngIf="fc.stars.errors.max">starts should be lesser than 5</div>
+      </div>
+    </div>
+    <div class="add-product-field">
+      <input type="text" placeholder="Rating" formControlName="rating"/>
+      <div class="error-list" *ngIf="fc.rating.errors && isSubmitted">
+        <div *ngIf="fc.rating.errors.required">Should not be empty</div>
+      </div>
+    </div>
+    <div class="add-product-field">
+      <input type="text" placeholder="Price" formControlName="price"/>
+      <div class="error-list" *ngIf="fc.price.errors && isSubmitted">
+        <div *ngIf="fc.price.errors.required">Should not be empty</div>
+      </div>
+    </div>
+    <div class="add-product-field">
+      <input type="text" placeholder="Image Url" formControlName="imageUrl"/>
+      <div class="error-list" *ngIf="fc.imageUrl.errors && isSubmitted">
+        <div *ngIf="fc.imageUrl.errors.required">Should not be empty</div>
+      </div>
+    </div>
+    <div class="add-product-field">
+      <input type="text" placeholder="Tags" formControlName="tags"/>
+      <div class="error-list" *ngIf="fc.tags.errors && isSubmitted">
+        <div *ngIf="fc.tags.errors.required">Should not be empty</div>
+      </div>
     </div>
     <div>
-      <input type="text" placeholder="Short description" />
-    </div>
-    <div>
-      <input type="text" placeholder="Starts" />
-    </div>
-    <div>
-      <input type="text" placeholder="Rating" />
-    </div>
-    <div>
-      <input type="text" placeholder="Price" />
-    </div>
-    <div>
-      <input type="text" placeholder="Image Url" />
-    </div>
-    <div>
-      <input type="text" placeholder="Tags" />
-    </div>
-    <div>
-      <button type="submit">
+      <button class="add-product-button" type="submit">
         <span>Add</span>
       </button>
-      <button type="reset">
+      <button class= "add-product-button" type="reset">
         <span>Clear</span>
       </button>
     </div>
