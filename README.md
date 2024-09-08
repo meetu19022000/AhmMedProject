@@ -174,3 +174,7 @@
     4. Set up Paypal button
     5. Add pay api to order router
     6. Get Paypal sanbox account
+17. Adding Add Product Page
+    1. Generate Component
+    2. Add method to frontend service (product service)
+    3. Add method to backend service (product router)

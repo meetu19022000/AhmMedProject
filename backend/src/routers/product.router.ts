@@ -1,7 +1,8 @@
 import { Router } from "express";
 import { sample_products, sample_tags } from "../data";
 import  asyncHandler from 'express-async-handler';
-import { ProductModel } from "../models/product.model";
+import { Product, ProductModel } from "../models/product.model";
+import { HTTP_BAD_REQUEST } from "../constants/http_status";
 const router = Router();
 
 router.get("/seed", asyncHandler(
@@ -72,6 +73,31 @@ router.get("/:productId", asyncHandler(
     async (req,res) => {
         const products = await ProductModel.findById(req.params.productId);
         res.send(products);
+    }
+))
+
+router.post('/add', asyncHandler(
+    async(req,res) => {
+        const {name, shortDescription, stars, rating,  price, imageUrl, tags} = req.body;
+        const product = await ProductModel.findOne({name});
+        if(product){
+            res.status(HTTP_BAD_REQUEST).send('Product already exist, please try again');
+        }
+        else{
+            const newProduct:Product = {
+                id:'',
+                name,
+                shortDescription,
+                stars,
+                rating,
+                price,
+                imageUrl,
+                tags
+            }
+
+            const dbProduct = await ProductModel.create(newProduct);
+            res.send(dbProduct);
+        }
     }
 ))
 
