@@ -166,3 +166,15 @@
     3. Add order service method
     4. Connect component to service
     5. Make the map component readonly
+16. Adding Paypal
+    1. Generate Component
+        1. Add to payment page
+    2. Get PAypal client Id
+    3. Add paypal JS to index.html
+    4. Set up Paypal button
+    5. Add pay api to order router
+    6. Get Paypal sanbox account
+17. Adding Add Product Page
+    1. Generate Component
+    2. Add method to frontend service (product service)
+    3. Add method to backend service (product router)
