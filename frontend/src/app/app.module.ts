@@ -32,6 +32,7 @@ import { AuthInterceptor } from './auth/auth.interceptor';
 import { PaymentPageComponent } from './components/pages/payment-page/payment-page.component';
 import { PaypalButtonComponent } from './components/partials/paypal-button/paypal-button.component';
 import { AddProductComponent } from './components/partials/add-product/add-product.component';
+import { StarRatingComponent } from './components/partials/start-rating/star-rating.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { AddProductComponent } from './components/partials/add-product/add-produ
     MapComponent,
     PaymentPageComponent,
     PaypalButtonComponent,
-    AddProductComponent
+    AddProductComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,

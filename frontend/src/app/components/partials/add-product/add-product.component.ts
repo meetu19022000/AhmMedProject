@@ -22,7 +22,7 @@ export class AddProductComponent implements OnInit {
     this.addProductForm = this.fromBuilder.group({
       name: ['', [Validators.required]],
       shortDescription: ['', [Validators.required]],
-      stars: ['', [Validators.required, Validators.min(0), Validators.max(5)]],
+      stars: ['', [Validators.required, Validators.min(1), Validators.max(5)]],
       rating: ['', Validators.required],
       price: ['', [Validators.required]],
       imageUrl: ['', [Validators.required]],
